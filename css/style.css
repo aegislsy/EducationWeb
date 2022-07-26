@@ -63,3 +63,73 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--color-white);
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background: var (--color-white);
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* --------- NAV BAR ------------ */
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav__menu a:hover {
+  color: var(--color-bg2);
+}
