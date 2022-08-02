@@ -18,10 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
       rel="stylesheet"
     />
-
+    <!-- SWIPER JS -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="./css/style.css" />
@@ -61,7 +61,7 @@
         </div>
       </div>
     </header>
-    <!------------------- CATEGORIES  --------------------->
+    <!------------------- CATEGORIES --------------------->
     <section class="categories">
       <div class="container categories__container">
         <div class="categories__left">
@@ -292,6 +292,124 @@
       </div>
     </section>
 
+    <!------------------- Testimonial --------------------->
+
+    <section class="container testimonials__container mySwiper">
+      <h2>Students' Testimonials</h2>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar1.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Dinana Ayi</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
+              provident rerum et, fugiat amet quia. Quisquam neque similique
+              quas optio!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar2.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Ernest Achiever</h5>
+            <small>Web Developer</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
+              provident rerum et, fugiat amet quia. Quisquam neque similique
+              quas optio!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar3.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Edem Quist</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
+              provident rerum et, fugiat amet quia. Quisquam neque similique
+              quas optio!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar4.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Hajia Bintu</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
+              provident rerum et, fugiat amet quia. Quisquam neque similique
+              quas optio!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar5.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Jane Doe</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              tenetur aut qui explicabo modi ipsa optio, ab doloremque quas,
+              provident rerum et, fugiat amet quia. Quisquam neque similique
+              quas optio!
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
     <script src="./main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      // slides for testimonials section
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
