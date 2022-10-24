@@ -4,15 +4,12 @@
 
 .about__achievements-container {
   display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 5rem;
+  grid-template-columns: 1fr;
 }
 
-.about__achievements-right > p {
-  margin: 1.6rem 0 2.5rem;
-}
 
 .achievments__cards {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -122,10 +119,7 @@
     grid-template-columns: 1fr;
     gap: 4rem;
   }
-  .about__achievements-left {
-    width: 80%;
-    margin: 0 auto;
-  }
+  
   .team__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
