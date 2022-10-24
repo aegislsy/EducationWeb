@@ -3,6 +3,7 @@
 }
 
 .about__achievements-container {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
 }
